@@ -34,6 +34,8 @@ const Modal = (props) => {
     const portalElement = document.getElementById('overlays'); 
     return (
        <>
+       <h1>Modal example</h1>
+       <p>You can change modals to danger,warning ,form modal</p>
         <Styled.ShowModalButton onClick ={ctx.showModal}><span>CLICK TO SHOW THE MODAL</span></Styled.ShowModalButton>
         { ctx.visible && ReactDOM.createPortal(<Backdrop onClick ={ctx.closeModal} />,portalElement)}
         { ctx.visible && ReactDOM.createPortal(<ModalOverlay attr ={props}/>,portalElement)}
