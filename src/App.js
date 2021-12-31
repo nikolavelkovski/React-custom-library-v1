@@ -14,9 +14,6 @@ function App() {
   return (
     <>
       <Navigation />
-      {/* <ModalProvider>
-        <Modal type ="info-success" title = "hello world" message = "This its a pretty beautiful message razbiras blazo adeee be ejjj zaso se siress"/>
-      </ModalProvider> */}
       <Main>
         <Routes>
           <Route path="/"  element={<HomeLanding />} />
@@ -27,7 +24,7 @@ function App() {
                 <Modal
                   type="info-success"
                   title="hello world"
-                  message="This its a pretty beautiful message razbiras blazo adeee be ejjj zaso se siress"
+                  message="This its a pretty beautiful message"
                 />
               </ModalProvider>
             }
